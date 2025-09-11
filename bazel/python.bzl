@@ -9,6 +9,7 @@ FIRECRACKER_EXEC_PROPERTIES = {
     "test.init-dockerd": "true",
     # Tell BuildBuddy to preserve the microVM state across test runs.
     "test.recycle-runner": "true",
+    "include-secrets": "true",
     "container-image": "docker://docker.io/juanzolotoochin/ubuntu-build-v2@sha256:4a898ae754ac575962392232dc0154937427bbd52f5b79cd65c0992b2ed6cc84",
 }
 

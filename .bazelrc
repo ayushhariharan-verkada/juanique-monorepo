@@ -25,6 +25,8 @@ build:remote --platforms=//:docker_image_platform
 build:remote --remote_timeout=1800
 build:remote --jobs=50
 
+build:ci --config=remote
+build:ci --remote_header=x-buildbuddy-api-key=${BUILDBUDDY_API_KEY}
 
 test --test_output=errors
 
